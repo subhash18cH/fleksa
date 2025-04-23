@@ -41,6 +41,13 @@ const booking_1 = require("./routes/booking");
 const app = (0, express_1.default)();
 const dotenv_1 = __importDefault(require("dotenv"));
 dotenv_1.default.config();
+const cors_1 = __importDefault(require("cors"));
+const corsOptions = {
+    origin: ['http://localhost:5173'],
+    methods: ['GET', 'POST'],
+    credentials: true,
+};
+app.use((0, cors_1.default)(corsOptions));
 app.use((0, express_1.json)());
 app.use((0, express_1.urlencoded)({ extended: true }));
 //route for event booking

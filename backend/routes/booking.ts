@@ -19,7 +19,7 @@ router.post<{}, {}, BookingRequest>("/book", (req, res) => {
     res.status(404).json({ message: "User not found" });
     return;
   }
-
+  
   // check if event exist
   const event = events.find(e => e.id === eventId);
   if (!event) {

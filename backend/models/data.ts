@@ -49,22 +49,22 @@ export const users: UserType[] = [
 export const events: EventType[] = [
   {
     id: 1,
-    title: 'Tech Meetup',
-    description: 'Local meetup',
+    title: 'React Workshop',
+    description: 'Learn the fundamentals of React and build your first application',
     start_time: new Date(),
     max_capacity: 2
   },
   {
     id: 2,
-    title: 'Hackathon',
-    description: '24hr coding challenge',
+    title: 'Node.js',
+    description: 'Dive into server-side JavaScript with Node.js and Express',
     start_time: new Date(),
     max_capacity: 2
   },
   {
     id: 3,
-    title: 'Project Expo',
-    description: '1 day long project expo',
+    title: 'AI in Web Development',
+    description: 'Explore how to integrate AI capabilities into modern web applications',
     start_time: new Date(),
     max_capacity: 5
   },
